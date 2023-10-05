@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal; /*****enlève l'épaisseur du gras sur tout les titres H******/
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;/*ajoute un effet sur le scroll au clique*/
+}
+
+@font-face {
+    font-family: 'BigN';
+    src: url('../fonts/BigNoodleTitling.eot');
+    src: url('../fonts/BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BigNoodleTitling.woff2') format('woff2'),
+        url('../fonts/BigNoodleTitling.woff') format('woff'),
+        url('../fonts/BigNoodleTitling.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*****************Header****************/
+
+
+header{
+    height: 100vh;
+    background: url("../img/fond.jpg") center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    position: fixed;
+    top:50%;
+    left:5%;
+    background:rgba(255,255,255,0.7);
+    transform: translateY(-50%);
+}
+
+header nav ul li{
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+header nav ul li:last-of-type{
+    border-bottom: none;
+}
+
+header nav ul li a{
+    font-family: 'big';
+    color:black;
+    text-transform: uppercase;
+}
+
+header nav ul li:hover a{
+    text-decoration: line-through;
+}
+
+header div {
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+}
+
+header div img{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+ /*****************fin header******************/
+
+main{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+main section{
+    width: 70%;/* largeur de la section*/
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main section>div{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    font-family: 'BigN';
+    font-size: 20px;
+}
+
+main section>div img{
+    width: 100%;
+}
+main section>div>div{
+    position: relative;
+    overflow: hidden;
+    
+}
+main section>div>div>div{
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+main section>div>div>div p{
+    text-align: center;
+}
+
+.top div{
+    transform: translateY(-100%);
+    transition: 0.5;   
+}
+
+.top:hover div{
+    transform: translateY(0);
+    transition: 0.5;
+}
+
+/*****************footer******************/
+
+footer{
+    height: 400px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "BigN";
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+
+footer div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+footer>div>div:nth-child(2){
+    padding-left: 50px;
+}
+
+footer>div>div:first-of-type {
+    border-right: 2px white solid;
+    padding-right: 50px;
+}
+
+footer>div:nth-child(2) img{
+    padding: 5px;
+}
+
